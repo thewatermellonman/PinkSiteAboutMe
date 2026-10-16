@@ -15,12 +15,19 @@ body {
     margin-bottom: 15px;
 }
 
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .topframes {
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
     grid-template-rows: 1fr 1fr;
     gap: 20px;
     align-items: center;
+    max-width: 1000px;
 }
 
 .imgcont {
@@ -73,4 +80,11 @@ body {
     grid-row: 2 / 3;
     width: 100%;
     height: auto;
+}
+
+.line1 {
+    border: none;
+    height: 4px;
+    background-color: #f07bcd;
+    width: 100%;
 }
