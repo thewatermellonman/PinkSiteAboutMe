@@ -1,0 +1,76 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: "Brush Script MT", "Segoe Script", "Comic Sans MS", cursive;
+}
+
+.top {
+    width: 100%;
+    display: flex;
+    background-color: rgb(255, 244, 231);
+    justify-content: center;
+    align-items: center;
+    height: 65px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+}
+
+.topframes {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px;
+    align-items: center;
+}
+
+.imgcont {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column: 2 / 3;
+    grid-row: 1 / 3;
+}
+
+.goldframemain {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.text-overlay {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+}
+
+.text-overlay h1 {
+    font-size: 50px;
+    margin: 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    color: #570326;
+}
+
+.text-overlay h3 {
+    font-size: 25px;
+    margin: 10px 0 0 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    color: #570326
+}
+
+.goldframe1 {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    width: 100%;
+    height: auto;
+}
+
+.goldframe2 {
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+    width: 100%;
+    height: auto;
+}
