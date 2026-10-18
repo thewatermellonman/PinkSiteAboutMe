@@ -29,12 +29,23 @@ a:hover {
     transform: translateY(-3px);
 }
 
+.background {
+    background-image: url('wallpaper.jpg');
+    background-size: 1200px 1200px;
+    background-position: center;
+    background-repeat: repeat;
+    width: 100vw;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
 .hero {
     min-height: 650px;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 20px
+    padding: 20px;
 }
 
 .topframes {
@@ -98,9 +109,39 @@ a:hover {
     height: auto;
 }
 
-.line1 {
-    border: none;
-    height: 4px;
-    background-color: #f07bcd;
+.desc1 {
+    background-color:antiquewhite;
+}
+
+.aboutme {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 60px 30px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 50px;
+}
+
+.polaroid {
+    grid-column: 1 / 2;
+    min-height: 270px;
+    width: 220px;
+    background-color:white;
+    padding: 12px 12px 45px;
+    box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.2);
+    transform: rotate(-5deg);
+    justify-self: center;
+}
+
+.polaroid img {
     width: 100%;
+    height: 210px;
+    object-fit: cover;
+    display: block;
+}
+
+.mainabout {
+    text-align: center;
 }
